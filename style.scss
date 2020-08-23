@@ -10,7 +10,11 @@
     position: absolute;
     margin-left: 310px;
     padding: 20px;
-    
+    line-height: 25px;
+    font-size: 20px;
+    @media (max-width: 700px) {
+        margin-left: 5px;
+    }
 }
 
 
@@ -30,7 +34,15 @@ nav {
         font-weight: bolder;
     }
     a {
+        display: block;
         font-size: 30px;
+        padding: 20px;
+        text-align: left;
+        border: 1px solid rgba(0, 0, 0, 0.219);
+    }
+    @media (max-width: 700px) {
+        position: absolute;
+        display: none;
     }
 }
 
