@@ -1,40 +1,52 @@
-body {
-    background: rgb(254,255,255);
-    background: -moz-linear-gradient(top,  rgba(254,255,255,1) 0%, rgba(221,241,249,1) 35%, rgba(160,216,239,1) 100%);
-    background: -webkit-linear-gradient(top,  rgba(254,255,255,1) 0%,rgba(221,241,249,1) 35%,rgba(160,216,239,1) 100%);
-    background: linear-gradient(to bottom,  rgba(254,255,255,1) 0%,rgba(221,241,249,1) 35%,rgba(160,216,239,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#a0d8ef',GradientType=0 );
-    background-size: cover;
-    
-    font-size: 20px;
-    line-height: 25px;
-    
-}
-.wrapper {
-    margin: 50px;
-    border: 1px solid black;
-    display: flex;
-    flex-flow: row-reverse;
-}
+:root {
+    background: rgba(71, 129, 129, 0.219);
+    }
+
+
+
 .container {
-    padding: 10px;
-    flex: 1 1 80%;
+    min-width: 300px;
     border: 1px solid black;
-    margin: 5px;
+    position: absolute;
+    margin-left: 310px;
+    padding: 20px;
+    
 }
+
+
 nav {
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 100%;
+    min-width: 290px;
     padding: 10px;
-    flex: 1 1 20%;
+    position: fixed;
     border: 1px solid black;
-    margin: 5px;
+    header {
+        margin: 20px auto 20px auto;
+        font-size: 40px;
+        text-align: center;
+        font-weight: bolder;
+    }
+    a {
+        font-size: 30px;
+    }
 }
+
+
 .main-section {
     ul li:before {
         content:'✓' ;
     }
     header {
+        margin: 20px auto 20px auto;
         font-size: 40px;
         text-align: center;
         font-weight: bolder;
+    }
+    code {
+        display: block;
+        padding: 10px 10% 10px 10%;
     }
 }

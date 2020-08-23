@@ -9,8 +9,17 @@
 </head>
 <body>
     <div class="wrapper">
+        <nav id="navbar">
+            <header>JS Documentation</header>
+
+            <a class="nav-link" href="#JavaScript_Fundamentals">JavaScript Fundamentals</a><br>
+            <a class="nav-link" href="#Hello,_world!">Hello, world!</a><br>
+            <a class="nav-link" href="#Code_structure">Code structure</a><br>
+            <a class="nav-link" href="#"></a><br>
+            <a class="nav-link" href="#"></a><br>
+        </nav>
         <main class="container" id="main-doc">
-            <section class="main-section">
+            <section class="main-section" id="JavaScript_Fundamentals">
                 <header>JavaScript Fundamentals</header>
                 <ul>
                     <li>Hello, world!</li>
@@ -39,16 +48,58 @@
                     alert( "Tea wanted: " + isTeaWanted ); // true
                 </code>
             </section>
-            <section class="main-section">
-                <header></header>
-                <p></p>
-                <p></p>
+            <section class="main-section" id="Hello,_world!">
+                <header>Hello, world!</header>
+                <p>This part of the tutorial is about core JavaScript, the language itself. 
+                    But we need a working environment to run our scripts and, since this book is online, the browser is a good choice. We’ll keep the amount of browser-specific commands (like alert) to a minimum so that you don’t spend time on them if you plan to concentrate on another environment (like Node.js). 
+                    We’ll focus on JavaScript in the browser in the next part of the tutorial. So first, let’s see how we attach a script to a webpage. For server-side environments (like Node.js), you can execute the script with a command like "node my.js".</p>
+                <p>As a rule, only the simplest scripts are put into HTML. More complex ones reside in separate files. 
+                    The benefit of a separate file is that the browser will download it and store it in its cache.
+                    Other pages that reference the same script will take it from the cache instead of downloading it, so the file is actually downloaded only once.
+                    That reduces traffic and makes pages faster.
+                    There is much more to learn about browser scripts and their interaction with the webpage. But let’s keep in mind that this part of the tutorial is devoted to the JavaScript language, so we shouldn’t distract ourselves with browser-specific implementations of it. We’ll be 
+                    using the browser as a way to run JavaScript, which is very convenient for online reading, but only one of many.
+                </p>
                 <code></code>
             </section>
-            <section class="main-section">
-                <header></header>
-                <p></p>
-                <p></p>
+            <section class="main-section" id="Code_structure">
+                <header>Code structure</header>
+                <p>The first thing we’ll study is the building blocks of code.
+
+                    Statements
+                    Statements are syntax constructs and commands that perform actions.
+                    
+                    We’ve already seen a statement, alert('Hello, world!'), which shows the message “Hello, world!”.
+                    
+                    We can have as many statements in our code as we want. Statements can be separated with a semicolon.
+                    
+                    For example, here we split “Hello World” into two alerts:
+                    
+                    alert('Hello'); alert('World');
+                    Usually, statements are written on separate lines to make the code more readable:
+                    
+                    alert('Hello');
+                    alert('World');</p>
+                <p>A semicolon may be omitted in most cases when a line break exists.
+
+                    This would also work:
+                    
+                    alert('Hello')
+                    alert('World')
+                    Here, JavaScript interprets the line break as an “implicit” semicolon. This is called an automatic semicolon insertion.
+                    
+                    In most cases, a newline implies a semicolon. But “in most cases” does not mean “always”!
+                    
+                    There are cases when a newline does not mean a semicolon. For example:
+                    
+                    alert(3 +
+                    1
+                    + 2);
+                    The code outputs 6 because JavaScript does not insert semicolons here. It is intuitively obvious that if the line ends with a plus "+", then it is an “incomplete expression”, so the semicolon is not required. And in this case that works as intended.
+                    
+                    But there are situations where JavaScript “fails” to assume a semicolon where it is really needed.
+                    
+                    Errors which occur in such cases are quite hard to find and fix.</p>
                 <code></code>
             </section>
             <section class="main-section">
@@ -64,14 +115,7 @@
                 <code></code>
             </section>
         </main>
-        <nav id="navbar">
-            <header></header>
-            <a class="nav-link" href="#"></a>
-            <a class="nav-link" href="#"></a>
-            <a class="nav-link" href="#"></a>
-            <a class="nav-link" href="#"></a>
-            <a class="nav-link" href="#"></a>
-        </nav>
+       
     </div>
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>   
 </body>
