@@ -1,8 +1,9 @@
 :root {
     background: rgba(71, 129, 129, 0.219);
+    font-family: Montserrat, serif;
     }
 
-
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 .container {
     min-width: 300px;
@@ -28,10 +29,12 @@ nav {
     position: fixed;
     border: 1px solid black;
     header {
+        display: inline-block;
         margin: 20px auto 20px auto;
-        font-size: 40px;
+        font-size: 30px;
         text-align: center;
         font-weight: bolder;
+        line-height: 35px;
     }
     a {
         display: block;
@@ -48,14 +51,17 @@ nav {
 
 
 .main-section {
+    
+    line-height: 30px;
     ul li:before {
         content:'✓' ;
     }
     header {
-        margin: 20px auto 20px auto;
+        margin: 30px auto 30px auto;
         font-size: 40px;
         text-align: center;
         font-weight: bolder;
+        line-height: 40px;
     }
     code {
         display: block;
