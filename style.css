@@ -15,7 +15,7 @@
   font-size: 20px;
 }
 
-@media (max-width: 700px) {
+@media screen and (max-width: 900px) {
   .container {
     margin-left: 5px;
   }
@@ -42,6 +42,7 @@ nav header {
 }
 
 nav a {
+  color: blue;
   display: block;
   font-size: 30px;
   padding: 20px;
@@ -49,11 +50,8 @@ nav a {
   border: 1px solid rgba(0, 0, 0, 0.219);
 }
 
-@media (max-width: 700px) {
-  nav {
-    position: absolute;
-    display: none;
-  }
+nav a:hover {
+  color: #f3083b;
 }
 
 .main-section {
@@ -75,5 +73,50 @@ nav a {
 .main-section code {
   display: block;
   padding: 10px 10% 10px 10%;
+}
+
+.open-button {
+  z-index: 8;
+  display: none;
+  background-color: #555;
+  color: white;
+  padding: 0px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  width: 50px;
+}
+
+@media screen and (max-width: 900px) {
+  #navbar {
+    top: 0px;
+    right: 0px;
+    width: 290px;
+    padding: 10px;
+    position: fixed;
+    border: 1px solid black;
+    display: none;
+    z-index: 9;
+  }
+  .open-button {
+    display: block;
+  }
+}
+
+.cancel {
+  z-index: 9;
+  display: none;
+  background-color: #555;
+  color: white;
+  padding: 0px;
+  border: none;
+  cursor: pointer;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  width: 50px;
 }
 /*# sourceMappingURL=style.css.map */
