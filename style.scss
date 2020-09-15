@@ -85,14 +85,8 @@ nav {
 }
 @media screen and (max-width: 900px) {
     #navbar {
-    top: 0px;
-    right: 0px;
-    width: 290px;
-    padding: 10px;
-    position: fixed;
-    border: 1px solid black;
     display: none;
-    z-index: 9;
+    
 }
 .open-button{
     display: block;
@@ -111,4 +105,26 @@ nav {
     top: 10px;
     right: 10px;
     width: 50px;
+}
+#navigation {
+    a {
+        &:hover{
+            color: rgb(243, 8, 59);
+        }
+        color: blue;
+        display: block;
+        font-size: 20px;
+        padding: 20px;
+        text-align: left;
+        border: 1px solid rgba(0, 0, 0, 0.219);
+    }
+    top: 0px;
+    right: 0px;
+    width: 290px;
+    padding: 50px 10px 10px 10px;
+    position: fixed;
+    border: 1px solid black;
+    display: none;
+    z-index: 9;
+    background-color: cornsilk;
 }

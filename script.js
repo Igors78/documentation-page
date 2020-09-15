@@ -1,10 +1,10 @@
 function openForm() {
-    document.getElementById("navbar").style.display = "block";
+    document.getElementById("navigation").style.display = "block";
     document.getElementById("close").style.display = "block";
 }
 
 function closeForm() {
-    document.getElementById("navbar").style.display = "none";
+    document.getElementById("navigation").style.display = "none";
     document.getElementById("close").style.display = "none";
 }
 
