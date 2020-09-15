@@ -78,15 +78,15 @@ nav a:hover {
 .open-button {
   z-index: 8;
   display: none;
-  background-color: #555;
-  color: white;
+  background-color: transparent;
+  color: #080808;
   padding: 0px;
   border: none;
   cursor: pointer;
   opacity: 0.8;
   position: fixed;
   top: 10px;
-  right: 10px;
+  left: 40px;
   width: 50px;
 }
 
@@ -102,20 +102,20 @@ nav a:hover {
 .cancel {
   z-index: 9;
   display: none;
-  background-color: #555;
-  color: white;
+  background-color: transparent;
+  color: #080808;
   padding: 0px;
   border: none;
   cursor: pointer;
   position: fixed;
   top: 10px;
-  right: 10px;
+  left: 40px;
   width: 50px;
 }
 
 #navigation {
   top: 0px;
-  right: 0px;
+  left: 0px;
   width: 290px;
   padding: 50px 10px 10px 10px;
   position: fixed;
@@ -136,5 +136,9 @@ nav a:hover {
 
 #navigation a:hover {
   color: #f3083b;
+}
+
+section {
+  margin-top: 20px;
 }
 /*# sourceMappingURL=style.css.map */

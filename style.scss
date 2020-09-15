@@ -73,15 +73,15 @@ nav {
 .open-button {
     z-index: 8;
     display: none;
-    background-color: #555;
-    color: white;
+    background-color: transparent;
+    color: rgb(8, 8, 8);
     padding: 0px;
     border: none;
     cursor: pointer;
     opacity: 0.8;
     position: fixed;
     top: 10px;
-    right: 10px;
+    left: 40px;
     width: 50px;
 }
 @media screen and (max-width: 900px) {
@@ -96,15 +96,15 @@ nav {
 .cancel {
     z-index: 9;
     display: none;
-    background-color: #555;
-    color: white;
+    background-color: transparent;
+    color: rgb(8, 8, 8);
     padding: 0px;
     border: none;
     cursor: pointer;
     
     position: fixed;
     top: 10px;
-    right: 10px;
+    left: 40px;
     width: 50px;
 }
 #navigation {
@@ -120,7 +120,7 @@ nav {
         border: 1px solid rgba(0, 0, 0, 0.219);
     }
     top: 0px;
-    right: 0px;
+    left: 0px;
     width: 290px;
     padding: 50px 10px 10px 10px;
     position: fixed;
@@ -128,4 +128,7 @@ nav {
     display: none;
     z-index: 9;
     background-color: cornsilk;
+}
+section {
+    margin-top: 20px;
 }
