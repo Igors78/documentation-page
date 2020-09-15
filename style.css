@@ -18,6 +18,7 @@
 @media screen and (max-width: 900px) {
   .container {
     margin-left: 5px;
+    width: 100%;
   }
 }
 
