@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Documentation page
 
 > This project is made as part of FreeCodeCamp responsive web design certification course
 
